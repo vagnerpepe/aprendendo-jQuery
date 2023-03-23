@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fade</title>
+
+        <!--jQuery-->
+        <script src="jquery-3.6.4.min.js"></script>
+
+        <!--Script-->
+        <script>
+
+            //Ao carregar o documento
+            $(document).ready(function() {
+
+                //Ocultar H1
+                $("h1").css("display","none");
+
+                //Exibir o H1
+                $("#exibir").click(function(){
+                    $("h1").fadeIn(); //fadeIn = exibir
+                });
+
+                //Ocultar o H1
+                $("#ocultar").click(function(){
+                    $("h1").fadeOut(); //fadeOut = ocultar
+                });
+
+                /*
+                    TEMPO
+                    1° Default = padrão(0,4s), qdo não especifico nda nos ()
+                    2° Slow = 0,6s ex: ("slow") que equivale a 0,6
+                    3° Valor = ex: (3000) que equivale a 3s
+                */
+
+            }); 
+
+        </script>
+
+    </head>
+
+    <body>
+    
+        <button id="exibir">Exibir</button>
+        <button id="ocultar">Ocultar</button>
+
+        <hr>
+
+        <h1>Aprendendo jQuery</h1>
+
+    </body>
+</html>
